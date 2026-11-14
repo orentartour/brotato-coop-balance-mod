@@ -1,0 +1,35 @@
+[h1]Coop Balance[/h1]
+Makes co-op fairer: your partner no longer pays for your character's drawbacks, and the Random button stops forcing very hard characters on the team.
+
+[h2]1. Fair materials in co-op[/h2]
+[b]The problem:[/b] in co-op, Brotato does not apply each character's materials modifier to its own player. It [b]averages[/b] the modifiers of all players and then splits every material evenly. So if you play [b]Farmer[/b] (-50% materials) with a partner who has no malus, [b]both[/b] of you end up at -25%. Your partner pays half of a drawback they never chose.
+
+[b]What the mod does:[/b] after every pickup, it tops up each player so that nobody suffers more than their own malus.
+[table]
+[tr][th][/th][th]Player 1 (Farmer)[/th][th]Player 2 (no malus)[/th][/tr]
+[tr][td]Vanilla[/td][td]75%[/td][td]75%[/td][/tr]
+[tr][td]With Coop Balance[/td][td]75% (unchanged)[/td][td][b]100%[/b][/td][/tr]
+[/table]
+[list]
+[*]Works for every materials malus: Farmer, Streamer, Hiker, Survivor (all materials) and Explorer, Cryptid, Archaeologist, Buccaneer, Fisherman (materials dropped by enemies). Items that change materials drops are taken into account too.
+[*]The player with the malus keeps the vanilla result: the mod never takes anything away.
+[*]Bonuses stay shared like in vanilla (Jack's bonus still helps both players). Two Farmers stay at -50%.
+[*]The extra materials also give the matching XP.
+[*]No effect in solo.
+[/list]
+A small overlay at the top of the screen (right of the wave timer) shows the extra materials each player receives during co-op waves, e.g. "enemies  P1 +0%  P2 +33%".
+
+[h2]2. Smarter Random character button[/h2]
+The Random button no longer picks these characters (you can still pick them yourself):
+[list]
+[*][b]In co-op: characters that make the game much harder for both players[/b]: Jack (+175% enemy health, +35% enemy damage), Diver (+200% enemy health), Chef (+100% enemy health). Curious, Captain and Droid only add a small enemy buff, so they stay in the draw.
+[*][b]In solo and co-op: characters that already beat Nightmare on the selected map[/b], so Random helps you discover new ones. With the map on Random, a character is skipped only if it beat Nightmare on every map.
+[/list]
+If a filter would leave no character to draw from, it is ignored for that draw.
+
+[h2]Info[/h2]
+[list]
+[*]Made for Brotato 1.2.0.3. Designed to work alongside other mods that extend the same scripts (it always calls the original game code).
+[*]Known limit: materials left on the ground at the end of a wave (turned into bonus materials) are not compensated.
+[/list]
+Feedback and bug reports are welcome in the comments.
