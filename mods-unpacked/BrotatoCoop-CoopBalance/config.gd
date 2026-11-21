@@ -49,23 +49,15 @@ const RANDOM_EFFECT_FILTER_WHITELIST = [
 	"character_curious",  # +25 % enemy health
 ]
 
-# --- Feature 3: scroll long item descriptions without a mouse wheel --------
-# For remote play (screen share) where the wheel is not forwarded. Only the
-# description of the item the player has selected scrolls.
+# --- Feature 3: auto-scroll long item descriptions ------------------------
+# For remote play (screen share) where neither the mouse wheel nor the cursor
+# reaches the game. A description longer than its card scrolls by itself:
+# pause at the top, slow scroll down, pause at the bottom, back up, repeat.
+# The right stick still scrolls by hand (auto-scroll pauses meanwhile).
 
-# Player whose descriptions get these controls (0 = P1, -1 = every player).
-const TOOLTIP_SCROLL_PLAYER = 0
-
-# Mouse: its vertical position on the screen picks the position in the text
-# (top = start, bottom = end), applied when the mouse moves. Works with the
-# hidden co-op cursor.
-const TOOLTIP_MOUSE_SCROLL = true
-# Screen fraction ignored at the top and bottom (0.15 = the text is fully
-# scrolled once the mouse is 15 % away from the screen edge).
-const TOOLTIP_MOUSE_SCROLL_MARGIN = 0.15
-
-# Keys (fallback): hold to scroll, pixels per second.
-const TOOLTIP_KEY_SCROLL = true
-const TOOLTIP_SCROLL_UP_KEY = KEY_PAGEUP
-const TOOLTIP_SCROLL_DOWN_KEY = KEY_PAGEDOWN
-const TOOLTIP_KEY_SCROLL_SPEED = 600.0
+const TOOLTIP_AUTO_SCROLL = true
+const TOOLTIP_AUTO_SCROLL_SPEED = 35.0          # pixels per second, going down
+const TOOLTIP_AUTO_SCROLL_RETURN_SPEED = 300.0  # pixels per second, going back up
+const TOOLTIP_AUTO_SCROLL_TOP_PAUSE = 2.5       # seconds
+const TOOLTIP_AUTO_SCROLL_BOTTOM_PAUSE = 2.5    # seconds
+const TOOLTIP_AUTO_SCROLL_MANUAL_PAUSE = 4.0    # seconds after a right stick move

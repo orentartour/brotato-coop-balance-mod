@@ -9,9 +9,8 @@ A small mod that makes Brotato co-op fairer.
 - **Smarter Random button.** The Random character button no longer picks
   characters that make co-op much harder, or characters you've already beaten
   Nightmare with on that map.
-- **Scroll item descriptions without a wheel.** For remote play (screen
-  share) where the mouse wheel is not forwarded: move the mouse up/down, or
-  hold Page Up / Page Down.
+- **Long item descriptions scroll by themselves.** For remote play (screen
+  share) where neither the mouse wheel nor the cursor reaches the game.
 
 **Install:** [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3839050939)
 (subscribe and restart the game).
@@ -95,17 +94,15 @@ map.
 If a filter would leave no character to draw from, it is ignored for that
 draw.
 
-## 3. Scroll item descriptions without a mouse wheel
+## 3. Long item descriptions scroll by themselves
 
 Long shop item descriptions are cut and normally scroll with the mouse wheel
-or the right stick. When playing through a remote screen share, the wheel is
-often not forwarded. With the mod, for the item P1 has selected:
-
-- **Mouse:** the vertical position of the mouse on the screen picks the
-  position in the text (top of the screen = start, bottom = end). It works
-  even though the game hides the cursor in co-op. A newly selected item stays
-  at the top until the mouse moves.
-- **Keys:** hold Page Up / Page Down.
+or the right stick. When playing through a remote screen share, neither the
+wheel nor the (hidden) co-op cursor may reach the game. With the mod, a
+description longer than its card scrolls on its own: short pause at the top,
+slow scroll down, pause at the bottom, back to the top, and again. No input
+needed. The right stick still scrolls by hand (the auto-scroll pauses for a
+few seconds).
 
 ## Configuration
 
@@ -123,10 +120,9 @@ Settings are in
 | `RANDOM_EXCLUDED_EFFECT_KEYS` | `enemy_health`, `enemy_damage` | Effects that get a character skipped |
 | `RANDOM_EFFECT_FILTER_WHITELIST` | Droid, Captain, Curious | Characters kept despite such an effect |
 | `RANDOM_EXCLUDE_BEATEN_DIFFICULTY` | `6` | Skip characters that beat this danger on the map (0 = off) |
-| `TOOLTIP_SCROLL_PLAYER` | `0` | Player who gets the description scroll controls (0 = P1, -1 = all) |
-| `TOOLTIP_MOUSE_SCROLL` | `true` | Mouse height scrolls the selected item description |
-| `TOOLTIP_MOUSE_SCROLL_MARGIN` | `0.15` | Screen fraction ignored at the top and bottom |
-| `TOOLTIP_KEY_SCROLL` | `true` | Page Up / Page Down scroll it (keys and speed configurable) |
+| `TOOLTIP_AUTO_SCROLL` | `true` | Long item descriptions scroll by themselves |
+| `TOOLTIP_AUTO_SCROLL_SPEED` | `35` | Scroll speed going down (pixels per second) |
+| `TOOLTIP_AUTO_SCROLL_TOP_PAUSE` / `_BOTTOM_PAUSE` | `2.5` | Pause at the top / bottom (seconds) |
 
 ## Install
 

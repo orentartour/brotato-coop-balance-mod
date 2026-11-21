@@ -27,12 +27,8 @@ The Random button no longer picks these characters (you can still pick them your
 [/list]
 If a filter would leave no character to draw from, it is ignored for that draw.
 
-[h2]3. Scroll item descriptions without a mouse wheel[/h2]
-Playing through a remote screen share where the mouse wheel does not get through? Long shop item descriptions can be scrolled for the item P1 has selected:
-[list]
-[*][b]Mouse:[/b] move it up and down. Its height on the screen picks the position in the text (top = start, bottom = end). Works even though the cursor is hidden in co-op.
-[*][b]Keys:[/b] hold Page Up / Page Down.
-[/list]
+[h2]3. Long item descriptions scroll by themselves[/h2]
+Playing through a remote screen share where the mouse wheel and the cursor do not get through? A shop item description longer than its card now scrolls on its own: short pause at the top, slow scroll down, pause at the bottom, back up, and again. No input needed. The right stick still scrolls by hand.
 
 [h2]Info[/h2]
 [list]

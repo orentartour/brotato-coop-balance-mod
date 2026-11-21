@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.0
+- Long shop item descriptions now scroll by themselves (pause at the top, slow
+  scroll down, pause at the bottom, back up, repeat), with no input needed.
+  Replaces the 1.4.0 mouse-height / Page Up / Page Down controls, which did not
+  get through the remote screen share. The right stick still scrolls by hand.
+
 ## 1.4.0
 - Long shop item descriptions can be scrolled without a mouse wheel or a right
   stick (remote play / screen share): the vertical position of the mouse picks
