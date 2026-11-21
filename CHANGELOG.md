@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0
+- Long shop item descriptions can be scrolled without a mouse wheel or a right
+  stick (remote play / screen share): the vertical position of the mouse picks
+  the position in the text of the selected item (top of the screen = start,
+  bottom = end), or hold Page Up / Page Down. P1 only by default
+  (`TOOLTIP_SCROLL_PLAYER`).
+
 ## 1.3.0
 - Public release. Mod id is now `BrotatoCoop-CoopBalance` (zip `CoopBalance.zip`).
 - Includes everything below.

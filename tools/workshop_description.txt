@@ -27,6 +27,13 @@ The Random button no longer picks these characters (you can still pick them your
 [/list]
 If a filter would leave no character to draw from, it is ignored for that draw.
 
+[h2]3. Scroll item descriptions without a mouse wheel[/h2]
+Playing through a remote screen share where the mouse wheel does not get through? Long shop item descriptions can be scrolled for the item P1 has selected:
+[list]
+[*][b]Mouse:[/b] move it up and down. Its height on the screen picks the position in the text (top = start, bottom = end). Works even though the cursor is hidden in co-op.
+[*][b]Keys:[/b] hold Page Up / Page Down.
+[/list]
+
 [h2]Info[/h2]
 [list]
 [*]Made for Brotato 1.2.0.3. Designed to work alongside other mods that extend the same scripts (it always calls the original game code).

@@ -1,8 +1,8 @@
 {
 	"name": "CoopBalance",
 	"namespace": "BrotatoCoop",
-	"version_number": "1.3.0",
-	"description": "Co-op fairness: a character's materials malus (Farmer, Explorer...) no longer hurts the partner, and the Random character button skips characters that make the game much harder or that already beat Nightmare on the map.",
+	"version_number": "1.4.0",
+	"description": "Co-op fairness: a character's materials malus (Farmer, Explorer...) no longer hurts the partner, and the Random character button skips characters that make the game much harder or that already beat Nightmare on the map. Long shop item descriptions can be scrolled with the mouse position or Page Up / Page Down (for remote play without a mouse wheel).",
 	"website_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3839050939",
 	"dependencies": [],
 	"extra": {

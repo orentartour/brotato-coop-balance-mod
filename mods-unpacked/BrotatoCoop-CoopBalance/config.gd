@@ -48,3 +48,24 @@ const RANDOM_EFFECT_FILTER_WHITELIST = [
 	"character_captain",  # +2 % enemy health and damage per wave
 	"character_curious",  # +25 % enemy health
 ]
+
+# --- Feature 3: scroll long item descriptions without a mouse wheel --------
+# For remote play (screen share) where the wheel is not forwarded. Only the
+# description of the item the player has selected scrolls.
+
+# Player whose descriptions get these controls (0 = P1, -1 = every player).
+const TOOLTIP_SCROLL_PLAYER = 0
+
+# Mouse: its vertical position on the screen picks the position in the text
+# (top = start, bottom = end), applied when the mouse moves. Works with the
+# hidden co-op cursor.
+const TOOLTIP_MOUSE_SCROLL = true
+# Screen fraction ignored at the top and bottom (0.15 = the text is fully
+# scrolled once the mouse is 15 % away from the screen edge).
+const TOOLTIP_MOUSE_SCROLL_MARGIN = 0.15
+
+# Keys (fallback): hold to scroll, pixels per second.
+const TOOLTIP_KEY_SCROLL = true
+const TOOLTIP_SCROLL_UP_KEY = KEY_PAGEUP
+const TOOLTIP_SCROLL_DOWN_KEY = KEY_PAGEDOWN
+const TOOLTIP_KEY_SCROLL_SPEED = 600.0
